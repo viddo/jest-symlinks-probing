@@ -1,4 +1,5 @@
-Verifies that symbolic links aren't included in test run
+Verifies that symbolic links aren't included in test run.
+Usage installs the fork [viddo/jest](https://github.com/viddo/jest) that includes a fix to follow symlinks for crawling files to test.
 
 # Usage
 1. [install yarn](https://yarnpkg.com/en/docs/install) (since that's what jest endorse over npm)
@@ -20,6 +21,7 @@ Done in 0.56s.
  ~/src/jest-symlinks-probing  ⑂ master    yarn run test-follow-symlinks
 ```
 
+Test run which includes the new `followSymlinks` flag to include test files that are symlinked:
 ```
 yarn test-follow-symlinks
 $ yarn run v0.27.5
